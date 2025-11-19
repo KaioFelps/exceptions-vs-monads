@@ -17,6 +17,7 @@ export class InMemoryDatastore {
     }
 
     public async all() {
+        this.mayThrowError();
         return [...this.ferns];
     }
 
